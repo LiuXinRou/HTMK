@@ -1,0 +1,288 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+
+
+body{
+  background-image: url("source/img/background_pic.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+}        
+        
+.wrap{ 
+  width: 900px; 
+  margin: 0 auto; 
+} 
+         
+
+#headbox{
+    
+    height: 200px; 
+  margin:10px; 
+  font-size:32px; 
+  padding:30px; 
+  background-color:#FFF8DC;
+
+}
+#left-up
+{ 
+height: 300px; 
+width: 328px; 
+float:left; 
+margin:10px; 
+padding:50px; 
+background-color:#FAF0E6
+; 
+font-size:32px; 
+} 
+#left-down
+{ height: 300px; 
+  width: 328px; 
+  float:left; 
+  margin:10px; 
+  padding:50px; 
+  background-color: #FAF0E6; 
+  font-size:32px; }
+  #left-m
+{ 
+height: 300px; 
+width: 328px; 
+float:left; 
+margin:10px; 
+padding:50px; 
+background-color: #FAF0E6; 
+font-size:32px; 
+} 
+#right-m
+{ height: 300px; 
+  width: 328px; 
+  float:left; 
+  margin:10px; 
+  padding:50px; 
+  background-color: #FAF0E6; 
+  font-size:32px; }
+#right-up
+{ height: 300px; 
+  width: 328px; 
+  float:left; 
+  margin:10px; 
+  padding:50px; 
+  background-color: #FAF0E6; 
+  font-size:32px; }
+#right-down
+{ height: 300px; 
+  width: 328px; 
+  float:left; 
+  margin:10px; 
+  padding:50px; 
+  background-color: #FAF0E6; 
+  font-size:32px; }
+
+
+
+#clear{
+    clear:both;}
+#footer{
+    height: 200px; 
+  margin:10px; 
+  background-color: #FFF8DC; 
+  font-size:25px;
+  padding:30px; 
+}
+img{
+    height:300px;
+    width: 300px;
+ 
+   
+    }
+.zoom {
+    width: 100%;
+height: 100%;
+transition: transform 1s ease;
+}
+ 
+.zoom:hover{
+    transform: scale(1.2);
+-ms-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+} 
+body { 
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
+        fade-in-words{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*自定义一个透明度从0到1的动画，它的名称是fade-in*/
+@keyframes fade-in{  
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-o-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+.first-words{ 
+    opacity: 0;      /*实先规定文字的状态是不显示的*/
+    animation: fade-in 2s ease 0s 1;    /*调用名称为fade-in的动画，全程动画显示时间4S，进入方式为ease，延时0S进入，播放次数1次*/
+    -webkit-animation: fade-in 2s ease 0s 1;
+    -moz-animation: fade-in 2s ease 0s 1;
+    -o-animation: fade-in 2s ease 0s 1;
+    -ms-animation: fade-in 2s ease 0s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.second-words{ 
+    opacity: 0;    
+    animation: fade-in 2s ease 2s 1;
+    -webkit-animation: fade-in 2s ease 2s 1;
+    -moz-animation: fade-in 2s ease 2s 1;
+    -o-animation: fade-in 2s ease 2s 1;
+    -ms-animation: fade-in 2s ease 2s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.third-words{ 
+    opacity: 0;    
+    animation: fade-in 4s ease 2s 1;
+    -webkit-animation: fade-in 2s ease 2s 1;
+    -moz-animation: fade-in 2s ease 2s 1;
+    -o-animation: fade-in 2s ease 2s 1;
+    -ms-animation: fade-in 42 ease 2s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.four-words{ 
+    opacity: 0;    
+    animation: fade-in 2s ease 2s 1;
+    -webkit-animation: fade-in 2s ease 2s 1;
+    -moz-animation: fade-in 2s ease 2s 1;
+    -o-animation: fade-in 2s ease 2s 1;
+    -ms-animation: fade-in 2s ease 2s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.five-words{ 
+    opacity: 0;    
+    animation: fade-in 2s ease 2s 1;
+    -webkit-animation: fade-in 2s ease 2s 1;
+    -moz-animation: fade-in 2s ease 2s 1;
+    -o-animation: fade-in 2s ease 2s 1;
+    -ms-animation: fade-in 2s ease 2s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="wrap">
+    <div id="headbox">
+      <div class="fade-in-words">
+        <div class="first-words">游泳池及外部介紹</div>
+        <div class="second-words">CYCU'S</div>
+        <div class="third-words">STADIUM</div>
+        <div class="four-words">AND</div>
+        <div class="five-words">SWIMMING POOL</div>
+        
+    </div>
+
+
+    </div>
+    <div id="left-up">
+        <img src="source/img/p1.jpg"  class="zoom">
+    </div>
+     <div id="right-up" style="font-size:16px;text-align: center;font-family: 標楷體;line-height: 24px;letter-spacing: 3px;">
+        體育館基地為斜邊的梯形土地，東側隔一大水溝即為鄰近的五層住宅區，
+        西側為前往運動場的校內重要道路，所以在設計時頗受地形限制，同時也有一定的挑戰。
+        場館主入口藉由挑空的門廳與二樓及地下室連貫成一個視覺穿透的整體。
+        場館主入口側將體積較小的運動設施，以鋸齒狀連附於主館旁，
+        除順應地界外，可減低主館體積龐大而造成的壓迫感。
+        屋頂採45°斜面採光高窗增加其使用品質。
+     </div>
+     <div id="left-m">
+         <img src="source/img/p2.jpg" class="zoom">
+     </div>
+     <div id="right-m" style="font-size:16px; text-align: center;font-family: 標楷體;line-height: 24px;letter-spacing: 3px;" >
+        中原大學的體育館側，有興建奧運標準的室內游泳池，
+        池內有水道8條長50M，提供游泳教學及正式比賽之用。
+        外牆R.C、屋頂鋼構，造型與已建成之體育館相輔相成。
+        在設計上嚴格劃分乾濕動線，觀眾從門廳直接引導至二層看台，
+        可容納觀眾400～600席，看台架高與體育館二樓以天橋相連，
+        看台下方作為更衣、浴廁、管理及機電之用。
+        由於泳池面臨校外道路，所以僅開高窗，
+        泳池兩端以大玻璃面配合池邊教學活動及休憩空間，並以天窗採光。
+     </div>
+     <div id="left-down"></div>
+   <div id="right-down" style="font-size:16px;text-align: center;font-family: 標楷體;line-height: 24px;letter-spacing: 3px;" >
+    游泳池與體育館新建工程共同獲得1992年第14屆中華民國建築師雜誌銀牌獎。
+    而中華民國建築師雜誌獎（現台灣建築獎），是一項由中華民國全國建築師公會主辦，旗下的全國聯合會雜誌社承辦的一項優良建築選拔活動，
+    每年會從各建築師與建築領域相關單位所建設的新建物進行評選，
+    並決定入圍與最終獲獎者。其用意就是鼓勵各相關單位能提昇建築職業水準，
+    進而對台灣社會文化或藝術進行貢獻。而中原的體育館及游泳池項目，無疑是具有一定水準的。
+   </div>
+    
+    <div id="clear"></div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

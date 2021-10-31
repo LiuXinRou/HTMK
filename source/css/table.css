@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video { 
+ margin: 0; 
+ padding: 0; 
+ border: 0; 
+ font-size: 100%; 
+ font: inherit; 
+ vertical-align: baseline; 
+} 
+/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section { 
+ display: block; 
+} 
+body { 
+ line-height: 1; 
+ background-image: url("source/img/bg2.png");
+ height: 100%;
+
+
+
+} 
+
+#outer-container{text-align:left;margin:0 auto 0; width:60%;max-width:900px;min-width:760px;}
+ 
+
+ol, ul { 
+ list-style: none; 
+} 
+blockquote, q { 
+ quotes: none; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+ content: ''; 
+ content: none; 
+} 
+table { 
+ border-collapse: collapse; 
+ border-spacing: 0; 
+ text-align:left;
+ background-color: antiquewhite;
+
+} 
+table,th,td{
+  border: 3px solid rgb(100, 42, 19) ;
+
+}
+
+th,td {
+  border: 2px solid #965028;
+  color: #404060;
+  padding: 10px;
+}
+th {
+  font: bold 20px "微軟雅黑";
+
+}
+td {
+  font: 20px "微軟雅黑";
+  text-align: center;
+}
+
+
+
+* { 
+  box-sizing: border-box; 
+} 
+ 
+.clearfix{ 
+  clear:both; 
+} 
+ 
+.wrap{ 
+  width: 900px; 
+  margin: 0 auto; 
+} 
+ 
+.header{ 
+  
+  height: 200px; 
+  margin:10px; 
+  font-size:32px; 
+  padding:50px; 
+  background-image: url("source/img/IMG_2577.jpeg"); 
+  background-size: 900px  200px; 
+   
+} 
+ 
+.footer{ 
+  height: 200px; 
+  margin:10px; 
+  background:rgba(182, 143, 98, 0.877); 
+  font-size:25px;
+  color: rgb(110, 62, 34);
+
+  padding:50px; 
+} 
+ 
+.left,.center,.right{ 
+
+  height: 400px; 
+  width: 280px; 
+  float:left; 
+  margin:10px; 
+  padding:50px; 
+  background-color: rgba(182, 173, 135, 0.877); 
+  font-size:32px; 
+   
+} 
+ 
+.left{ 
+  width: 200px; 
+} 
+.center{ 
+  width: 430px; 
+} 
+.right{ 
+  width: 660px; 
+} 
+ 
+
+
+h1{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: "微軟正黑體";
+
+   
+    color:rgb(110, 62, 34);
+    
+    
+}
+
+p{
+    border: 3px;
+    border-style: double;
+    color:rgb(48, 19, 0);
+}
+
+a{
+    color:rgb(107, 75, 56);
+    font-weight: bold;
+}
+
+
+td:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+td:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
