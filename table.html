@@ -1,249 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <style>
-          
-            /*@import url("source/css/table.css");*/
-
-
-
-            html, body, div, span, applet, object, iframe, 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
-a, abbr, acronym, address, big, cite, code, 
-del, dfn, em, img, ins, kbd, q, s, samp, 
-small, strike, strong, sub, sup, tt, var, 
-b, u, i, center, 
-dl, dt, dd, ol, ul, li, 
-fieldset, form, label, legend, 
-table, caption, tbody, tfoot, thead, tr, th, td, 
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary, 
-time, mark, audio, video { 
- margin: 0; 
- padding: 0; 
- border: 0; 
- font-size: 100%; 
- font: inherit; 
- vertical-align: baseline; 
-} 
-/* HTML5 display-role reset for older browsers */ 
-article, aside, details, figcaption, figure,  
-footer, header, hgroup, menu, nav, section { 
- display: block; 
-} 
-body { 
- line-height: 1; 
- background-image: url("source/img/bg2.png");
- height: 100%;
-
-
-
-} 
-
-#outer-container{text-align:left;margin:0 auto 0; width:60%;max-width:900px;min-width:760px;}
- 
-
-ol, ul { 
- list-style: none; 
-} 
-blockquote, q { 
- quotes: none; 
-} 
-blockquote:before, blockquote:after, 
-q:before, q:after { 
- content: ''; 
- content: none; 
-} 
-table { 
- border-collapse: collapse; 
- border-spacing: 0; 
- text-align:left;
- background-color: antiquewhite;
-
- width: 900px;
- height: 500px;
-
-} 
-table,th,td{
-  border: 3px solid rgb(100, 42, 19) ;
-
-}
-
-th,td {
-  border: 2px solid #965028;
-  color: #404060;
-  padding: 10px;
-}
-th {
-  font: bold 20px "微軟雅黑";
-
-}
-td {
-  font: 20px "微軟雅黑";
-  text-align: center;
-}
-
-
-
-* { 
-  box-sizing: border-box; 
-} 
- 
-.clearfix{ 
-  clear:both; 
-} 
- 
-.wrap{ 
-  width: 900px; 
-  margin: 0 auto; 
-} 
- 
-.header{ 
-  
-  height: 200px; 
-  margin:10px; 
-  font-size:32px; 
-  padding:50px; 
-  background-image: url("source/img/IMG_2577.jpg"); 
-  background-size: 900px  200px; 
-   
-} 
- 
-.footer{ 
-  height: 200px; 
-  margin:10px; 
-  background:rgba(182, 143, 98, 0.877); 
-  font-size:25px;
-  color: rgb(110, 62, 34);
-
-  padding:50px; 
-} 
- 
-.left,.center,.right{ 
-
-  height: 400px; 
-  width: 280px; 
-  float:left; 
-  margin:10px; 
-  padding:50px; 
-  background-color: rgba(182, 173, 135, 0.877); 
-  font-size:32px; 
-   
-} 
- 
-.left{ 
-  width: 200px; 
-} 
-.center{ 
-  width: 430px; 
-} 
-.right{ 
-  width: 660px; 
-} 
- 
-
-
-h1{
-    font-size: 25px;
-    font-weight: bolder;
-    text-align: center;
-    font-family: "微軟正黑體";
-
-   
-    color:rgb(110, 62, 34);
-    
-    
-}
-
-p{
-    border: 3px;
-    border-style: double;
-    color:rgb(48, 19, 0);
-}
-
-a{
-    color:rgb(107, 75, 56);
-    font-weight: bold;
-}
-
-
-td:first-child{
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-td:last-child{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-
-        </style>
-</head>
-<body>
-<div class="wrap">
-  <div class="header">頂</div>
-    <div class="content">
+    <style>
+    @import url("source/css/table.css");
+    @import url("int.js");
+    </style>
+  </head>
+  <body>
+    <div class="sample-menu-style dropdown-menu">
+      <span tabindex="0" onclick="return true">
+        <img class="l" src="source/img/list.jpg">
+      </span>
+      <div  tabindex="0" onclick="return true">.</div>
+      <ul>
+        <li><div class="demo"><a class="l" href="main.html" onclick="sampleMenu(this)">首頁</a></div></li>
+        <li><div class="demo"><a class="l" href="introduce.html" onclick="sampleMenu(this)">外部介紹</a></div></li>
+        <li><div class="demo"><a class="l" href="introduction.html" onclick="sampleMenu(this)">場館介紹</a></div></li>
+        <li><div class="demo"><a class="l" href="member.html" onclick="sampleMenu(this)">組員介紹</a></div></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <div class="header"></div>
+      <div class="content">
         <form method="post" action="mailto:lightning901027@gmail.com?subject=personalInformation" enctype="text/plain">
-            <table>     
-                    <tr>
-                      <th id="first-child" colspan="4">
-                        <h1>聯絡我們</h1>
-                      </th>
-                    </tr>
-            
-                    <tr>
-                      <th>姓名</th>
-                      <th><input type="text" name="username" size="15" style="background-color: antiquewhite;"  /></th>
-                      <th>性別</th>
-                      <th>
-                        <input type="radio" name="gender" value="女生" checked />女生
-                        <input type="radio" name="gender" value="男生" checked />男生
-                      </th>
-            
-                    </tr>
-
-                    <tr>
-                      <th>手機(10碼)</th>
-                      <th><input type="text" name="phonenumber" sizeb="15" /></th>
-             
-                    </tr>
-                         
-                    <tr>
-                      <th>email</th>
-                      <th colspan="3"><input type="text" name="email" size="15" /></th>
-           
-                    </tr>
-                
-            
-                   
-                    <tr>
-                      <th>其他意見</th>
-                      <th colspan="3"><textarea name="memo" cols="30" rows="3" wrap="soft">
-                        </textarea>
-                      </th>
-                    </tr>
-                
-            </table>
-                <input style="color:green;font-weight:bold;font-size:20px" type="submit" value="送出" />
- 
- 
- 		</form>
-
-
-
-
-
- 
+          <table>
+            <tr>
+              <th colspan="4">
+                <h1>Contact Us</h1>
+              </th>
+            </tr>
+            <tr>
+              <th >Name</th>
+              <th><div class="demo"><input class="basic" type="text"  name="username" size="15" placeholder="請輸入文字..." required  /></div></th>
+              <div class="gender">
+                <th>Gender
+                  <input class="radio" type="radio" name="gender" value="女生" checked />Female
+                  <input class="radio" type="radio" name="gender" value="男生" checked />Male
+                </th>
               </div>
-	
-</div>
-
-    
-    
+            </tr>
+            <tr>
+              <th>Phone Number</th>
+              <th colspan="3"><div class="demo"><input class="basic" type="text" name="phonenumber" size="15" placeholder="請輸入數字..." required /></div></th>
+            </tr>
+            
+            
+            <tr>
+              <th>Email</th>
+              <th colspan="3"><div class="demo"><input class="basic" type="email" name="email" style="width: 800px" placeholder="請輸入電子郵件..." required /></div></th>
+            </tr>
+            
+            <tr>
+              <th >Others</th>
+              <th colspan="3"><div class="demo"><textarea name="memo" cols="80" rows="5" wrap="soft" style="border-radius: 30px;
+                border-style: none;">
+              </textarea></div>
+            </th>
+          </tr>
+        </table>
+        <input
+        style="background-color: rgb(223, 191, 152);
+        color:rgb(121, 87, 24);
+        border-radius: 20px;
+        font-weight:bold;
+        font-size:20px;
+        width: 100px;height: 50px;
+        margin-top:25px;
+        "
+        type="submit" value="送出" width="150px"/>
+      </form>
+    </div>
+  </div>
+  
+  
 </body>
 </html>
